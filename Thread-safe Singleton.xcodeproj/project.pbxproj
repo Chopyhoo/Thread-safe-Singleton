@@ -17,6 +17,11 @@
 		8B80FB5A292B8CA800D8F883 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FB30292B8CA300D8F883 /* ContentView.swift */; };
 		8B80FB5B292B8CA800D8F883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B80FB31292B8CA800D8F883 /* Assets.xcassets */; };
 		8B80FB5C292B8CA800D8F883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B80FB31292B8CA800D8F883 /* Assets.xcassets */; };
+		8B80FB6C292B8D0000D8F883 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FB6B292B8D0000D8F883 /* SettingsManager.swift */; };
+		8B80FB6D292B8D0000D8F883 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FB6B292B8D0000D8F883 /* SettingsManager.swift */; };
+		8B80FB6F292B8E8700D8F883 /* SettingsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FB6E292B8E8700D8F883 /* SettingsManagerTests.swift */; };
+		8B80FB70292B910400D8F883 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FB6B292B8D0000D8F883 /* SettingsManager.swift */; };
+		8B80FB71292B91FA00D8F883 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FB6B292B8D0000D8F883 /* SettingsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,8 @@
 		8B80FB4F292B8CA800D8F883 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B80FB53292B8CA800D8F883 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		8B80FB55292B8CA800D8F883 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		8B80FB6B292B8D0000D8F883 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		8B80FB6E292B8E8700D8F883 /* SettingsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +97,7 @@
 				8B80FB3D292B8CA800D8F883 /* macOS */,
 				8B80FB46292B8CA800D8F883 /* Tests iOS */,
 				8B80FB52292B8CA800D8F883 /* Tests macOS */,
+				8B80FB72292B920600D8F883 /* Tests Common */,
 				8B80FB37292B8CA800D8F883 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,9 +105,8 @@
 		8B80FB2E292B8CA300D8F883 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				8B80FB2F292B8CA300D8F883 /* Thread_safe_SingletonApp.swift */,
-				8B80FB30292B8CA300D8F883 /* ContentView.swift */,
-				8B80FB31292B8CA800D8F883 /* Assets.xcassets */,
+				8B80FB73292B936600D8F883 /* XcodeGenerated */,
+				8B80FB6B292B8D0000D8F883 /* SettingsManager.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -139,6 +146,24 @@
 				8B80FB55292B8CA800D8F883 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		8B80FB72292B920600D8F883 /* Tests Common */ = {
+			isa = PBXGroup;
+			children = (
+				8B80FB6E292B8E8700D8F883 /* SettingsManagerTests.swift */,
+			);
+			path = "Tests Common";
+			sourceTree = "<group>";
+		};
+		8B80FB73292B936600D8F883 /* XcodeGenerated */ = {
+			isa = PBXGroup;
+			children = (
+				8B80FB2F292B8CA300D8F883 /* Thread_safe_SingletonApp.swift */,
+				8B80FB30292B8CA300D8F883 /* ContentView.swift */,
+				8B80FB31292B8CA800D8F883 /* Assets.xcassets */,
+			);
+			path = XcodeGenerated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +326,7 @@
 			files = (
 				8B80FB59292B8CA800D8F883 /* ContentView.swift in Sources */,
 				8B80FB57292B8CA800D8F883 /* Thread_safe_SingletonApp.swift in Sources */,
+				8B80FB6C292B8D0000D8F883 /* SettingsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +336,7 @@
 			files = (
 				8B80FB5A292B8CA800D8F883 /* ContentView.swift in Sources */,
 				8B80FB58292B8CA800D8F883 /* Thread_safe_SingletonApp.swift in Sources */,
+				8B80FB6D292B8D0000D8F883 /* SettingsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B80FB70292B910400D8F883 /* SettingsManager.swift in Sources */,
 				8B80FB4A292B8CA800D8F883 /* Tests_iOSLaunchTests.swift in Sources */,
 				8B80FB48292B8CA800D8F883 /* Tests_iOS.swift in Sources */,
+				8B80FB6F292B8E8700D8F883 /* SettingsManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +357,7 @@
 			files = (
 				8B80FB56292B8CA800D8F883 /* Tests_macOSLaunchTests.swift in Sources */,
 				8B80FB54292B8CA800D8F883 /* Tests_macOS.swift in Sources */,
+				8B80FB71292B91FA00D8F883 /* SettingsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
